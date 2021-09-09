@@ -1,0 +1,18 @@
+# Created by trellis-cli vcanary
+# Documentation: https://roots.io/trellis/docs/wordpress-sites/
+
+wordpress_sites:
+  bedrock-trellis-example.com:
+    site_hosts:
+    - canonical: bedrock-trellis-example.test
+      redirects:
+      - www.bedrock-trellis-example.test
+    local_path: ../site
+    admin_email: admin@bedrock-trellis-example.test
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false
